@@ -1,0 +1,9 @@
+[submodule "deps/libuv"]
+	path = deps/libuv
+	url = https://github.com/libuv/libuv.git
+[submodule "deps/picohttpparser"]
+	path = deps/picohttpparser
+	url = https://github.com/h2o/picohttpparser.git
+[submodule "wslay"]
+	path = deps/wslay
+	url = https://github.com/tatsuhiro-t/wslay.git
