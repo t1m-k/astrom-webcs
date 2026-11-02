@@ -1,0 +1,6 @@
+*.c text eol=lf
+*.h text eol=lf
+
+# Vendored, auto-generated upstream. Byte-identical to the published commit:
+# any EOL rewriting would invalidate the SHA256 check in CMakeLists.txt.
+deps/fio-stl.h -text

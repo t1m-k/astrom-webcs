@@ -1,0 +1,10 @@
+# ignore build artefacts
+build/
+build-*/
+compile_commands.json
+
+# per-machine presets (toolchain path, etc.)
+CMakeUserPresets.json
+
+# other not connected files (IDE, etc.)
+.vscode/*
