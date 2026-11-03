@@ -1,6 +1,11 @@
 # AstroM-WebCS
 Web interface for control system of SAO RAS comples «Astro-M»
 
+Note: This project is distributed under the AGPLv3.0 License and uses the following submodules:
+- [libuv](https://github.com/libuv/libuv), MIT License
+- [PicoHTTPParser](https://github.com/h2o/picohttpparser), MIT License
+- [Wslay](https://github.com/tatsuhiro-t/wslay), MIT License
+
 ## Building
 Clone the repo with used submodules:
 ```bash
