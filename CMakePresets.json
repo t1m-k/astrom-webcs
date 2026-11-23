@@ -20,7 +20,7 @@
       "inherits": "base",
       "generator": "Unix Makefiles",
       "cacheVariables": {
-        "ASTROMCS_WERROR": "ON"
+        "AMWCS_WERROR": "ON"
       }
     },
     {
@@ -30,7 +30,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "gcc",
         "CMAKE_BUILD_TYPE": "Debug",
-        "ASTROMCS_SANITIZE": "ON"
+        "AMWCS_SANITIZE": "ON"
       },
       "condition": {
         "type": "equals",
@@ -45,7 +45,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "clang",
         "CMAKE_BUILD_TYPE": "Debug",
-        "ASTROMCS_SANITIZE": "ON"
+        "AMWCS_SANITIZE": "ON"
       },
       "condition": {
         "type": "notEquals",

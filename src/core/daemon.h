@@ -25,14 +25,16 @@
  * - `src/tests/daemon.c`
  */
 
-#ifndef H___ASTROMCS_DAEMON___H
-#define H___ASTROMCS_DAEMON___H
+#ifndef H___AMWCS_DAEMON___H
+#define H___AMWCS_DAEMON___H
 
 /**
- * @brief Checks that this layer is reachable.
+ * @brief Checks if this layer is reachable.
+ * @return 0 on success, -1 on failure.
  *
- * @return 0 when it is, or a negative value on failure.
+ * On failure `errno` may hold the reason, as set by the underlying call; read
+ * it immediately if needed.
  */
-int astromcs_daemon_ping(void);
+int amwcs_daemon_ping(void);
 
-#endif /* H___ASTROMCS_DAEMON___H */
+#endif /* H___AMWCS_DAEMON___H */

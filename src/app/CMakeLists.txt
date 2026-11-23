@@ -3,16 +3,13 @@ if(NOT TARGET fio)
         "The `fio` target is missing - the root CMakeLists.txt was not used.")
 endif()
 
-if(NOT TARGET astromcs_core)
+if(NOT TARGET amwcs_core)
     message(FATAL_ERROR
-        "The `astromcs_core` target is missing - src/core was not added.")
+        "The `amwcs_core` target is missing - src/core was not added.")
 endif()
 
-add_executable(astromcs_app main.c webcs.c daemon.c)
+add_executable(amwcs_app main.c webcs.c daemon.c)
 
-target_compile_definitions(astromcs_app PRIVATE
-    ASTROMCS_VERSION="${PROJECT_VERSION}")
+amwcs_configure_target(amwcs_app)
 
-astromcs_configure_target(astromcs_app)
-
-target_link_libraries(astromcs_app PRIVATE fio astromcs_core)
+target_link_libraries(amwcs_app PRIVATE fio amwcs_core)
